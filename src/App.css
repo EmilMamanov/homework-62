@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0 15px;
+}
+
+ul {
+  padding-left: 0;
 }
 
 .logo {
@@ -39,4 +42,39 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.container {
+  text-align: center;
+}
+
+.main-nav {
+  text-align: center;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav-item {
+  list-style: none;
+  margin: 10px;
+  width: 15%;
+  height: 100%;
+  border: 1px solid #535bf2;
+  border-radius: 10px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.link-img {
+  width: 174px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.Jin-image {
+  width: 400px;
+  height: 600px;
 }

@@ -4,11 +4,11 @@ import '../App.css';
 
 const Navigation: React.FC = () => {
     return (
-        <nav>
-            <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li><NavLink to="/about">About Us</NavLink></li>
-                <li><NavLink to="/contacts">Contacts</NavLink></li>
+        <nav className="main-nav">
+            <ul className="main-nav-list">
+                <li className="main-nav-item">
+                    <NavLink to="/">Home</NavLink>
+                </li>
             </ul>
         </nav>
     );

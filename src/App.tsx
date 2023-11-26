@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './links/Home';
+import JinKazama from './links/JinKazama';
+import KazuyaMishima from './links/KazuyaMishima';
+import JunKazama from './links/JunKazama';
+import ReinaMishima from './links/ReinaMishima';
 import Navigation from './Components/Navigation';
-import Home from './links/MainPage';
-import About from './links/About';
-import Contacts from './links/Contacts';
 import './App.css';
 
 const App: React.FC = () => {
@@ -13,8 +15,10 @@ const App: React.FC = () => {
             <div className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/jinkazama" element={<JinKazama />} />
+                    <Route path="/kazuyamishima" element={<KazuyaMishima />} />
+                    <Route path="/junkazama" element={<JunKazama />} />
+                    <Route path="/reinamishima" element={<ReinaMishima />} />
                 </Routes>
             </div>
         </Router>
