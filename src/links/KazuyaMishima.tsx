@@ -1,13 +1,17 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 import kazuyaMishimaImage from '../assets/profiles/kazuya-profile.png';
 
 const KazuyaMishima: React.FC = () => {
+
+    const videoId = 'FFAMYW2POBw';
+
     return (
         <div>
             <h2>Kazuya Mishima</h2>
             <div className="main-info">
             <div>
-            <img className="profile-pic" src={kazuyaMishimaImage}/>
+            <img alt="Kazuya" className="profile-pic" src={kazuyaMishimaImage}/>
             </div>
             <p>Kazuya Mishima (三島 一八 Mishima Kazuya?) is one of the main characters in the Tekken series. He appears in all Tekken games except Tekken 3, in which he only made two cameo appearances. Although he is seen as the main protagonist and hero of the first Tekken game, Kazuya became one of the main antagonists of the series ever since Tekken 2. Kazuya is the son of Heihachi Mishima and Kazumi Mishima, the possible love interest of Jun Kazama and the father of Jin Kazama. He is also the adoptive brother of Lee Chaolan, the half-brother of Lars Alexandersson, and the grandson of Jinpachi Mishima.
             </p>
@@ -23,6 +27,11 @@ const KazuyaMishima: React.FC = () => {
             <p>
                 Kazuya is driven by his need for control, power, and revenge against his father. After initially appearing to be a sympathetic protagonist in Tekken, from Tekken 2 onwards he has shown that everything comes second to his plans for complete control and power. Since Heihachi's death, Kazuya has continued crusading for power and is driven now by the desire for complete control and world domination, an ambition of his that has been hinted at from the very start.
             </p>
+            </div>
+
+            <div>
+                <h3>Watch trailer</h3>
+                <YouTube videoId={videoId} />
             </div>
         </div>
     );

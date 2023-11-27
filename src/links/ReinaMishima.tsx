@@ -1,12 +1,16 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 import reinaMishimaImage from '../assets/reina-mishima.jpg';
 
 const ReinaMishima: React.FC = () => {
+
+    const videoId = 'PsCpewoF2E4';
+
     return (
         <div>
             <h2>Reina Mishima</h2>
             <div>
-                <img className="profile-pic" src={reinaMishimaImage}/>
+                <img alt="reina" className="profile-pic" src={reinaMishimaImage}/>
             </div>
             <h3>
                 Biography
@@ -31,7 +35,14 @@ const ReinaMishima: React.FC = () => {
             <p>
                 Reina is a young woman with a slight build. Her hair is cut in a short, untidy bob, with purple tips that fade into her natural black. Her primary outfit is sporty with an emphasis on style as well as practicality.
             </p>
+
+            <div>
+                <h3>Watch trailer</h3>
+                <YouTube videoId={videoId} />
+            </div>
         </div>
+
+
     );
 };
 
