@@ -6,6 +6,8 @@ import KazuyaMishima from './links/KazuyaMishima';
 import JunKazama from './links/JunKazama';
 import ReinaMishima from './links/ReinaMishima';
 import Navigation from './Components/Navigation';
+import Contacts from "./links/Contacts.tsx";
+import About from "./links/About.tsx";
 import './App.css';
 
 const App: React.FC = () => {
@@ -15,6 +17,8 @@ const App: React.FC = () => {
             <div className="container">
                 <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/about" element={<About />} />
                     <Route path="/jinkazama" element={<JinKazama />} />
                     <Route path="/kazuyamishima" element={<KazuyaMishima />} />
                     <Route path="/junkazama" element={<JunKazama />} />
